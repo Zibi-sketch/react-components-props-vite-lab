@@ -1,0 +1,38 @@
+.App {
+    font-family: 'Segoe UI', Tahoma, Verdana;
+}
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+    text-decoration: rgb(84, 190, 228) underline;
+}
+
+h3 {
+    font-size: 150%;
+    text-align: justify;
+    text-decoration: rgb(84, 190, 228) underline;
+}
+
+
+/*I wanted to make the image spin for absolutely no reason whatsoever😆. Just a fun little project*/
+img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    animation:spinClockwise 15s linear infinite;
+}
+
+@keyframes spinClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
