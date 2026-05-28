@@ -3,7 +3,7 @@ import blogData from "../data/blog";
 
 import Article from "./Article";
 
-function ArticleList(posts) {
+function ArticleList(posts = []) {
     return (
         <main className="List">
             {
