@@ -1,4 +1,3 @@
-import { expect, test } from "vitest";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import ArticleList from "../components/ArticleList";
