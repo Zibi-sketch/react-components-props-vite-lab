@@ -1,11 +1,12 @@
 import blogData from "../data/blog";
 
 
-function About({ image, about }) {
+function About({ image = "https://via.placeholder.com/215", about }) {
     return (
         <aside className="About">
-            <p>{about}</p>
+
             <img src={image} alt="blog logo" />
+            <p>{about}</p>
 
         </aside>
     )

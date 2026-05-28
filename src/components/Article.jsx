@@ -1,13 +1,13 @@
 import blogData from "../data/blog";
 
 
-function Article({ title, date, preview}) {
-    return(
-    <div className="Article">
-        <h3>{title}</h3>
-        <small>{date || "January 1, 1970"}</small>
-        <p>{preview}</p>
-    </div>
+function Article({ title, date = "January 1, 1970", preview }) {
+    return (
+        <div className="Article">
+            <h3>{title}</h3>
+            <small>{date}</small>
+            <p>{preview}</p>
+        </div>
     )
 }
 
