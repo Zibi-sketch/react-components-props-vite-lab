@@ -3,11 +3,12 @@ import blogData from "../data/blog";
 
 import Article from "./Article";
 
-function ArticleList(posts = []) {
+function ArticleList(articles) {
+    const postsArray = articles.posts || [];
     return (
         <main className="List">
             {
-                posts.map((post) => {
+                postsArray.map((post) => {
                     return (
                         <Article
                             key={post.id}
